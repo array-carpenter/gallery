@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Viz Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding-top: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-footer {
+      padding: 1rem;
+      text-align: center;
+    }
+    .card-footer a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ray Carpenter</h1>
+  <div class="gallery">
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/array-carpenter/nfl-draft-data/master/2025_post_combine/Ashton_Jeanty_post_combine.png" alt="NFL Draft Radar Charts">
+      <div class="card-footer">
+        <a href="code/viz1_code.py" target="_blank">NFL Draft Radar Charts</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/viz2.png" alt="Visualization 2">
+      <div class="card-footer">
+        <a href="code/viz2_code.py" target="_blank">View Code</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
