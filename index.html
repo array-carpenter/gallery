@@ -8,16 +8,17 @@
     body {
       font-family: Arial, sans-serif;
       background: #f9f9f9;
-      margin: 0;
+      margin: 0 auto;
       padding: 2rem;
+      max-width: 900px;
     }
     h1 {
       text-align: center;
     }
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       padding-top: 1rem;
     }
     .card {
@@ -50,15 +51,15 @@
   <h1>Ray Carpenter</h1>
   <div class="gallery">
     <div class="card">
-        <img src="https://raw.githubusercontent.com/array-carpenter/nfl-draft-data/master/2025_post_combine/Ashton_Jeanty_post_combine.png" alt="NFL Draft Radar Charts">
+      <img src="https://raw.githubusercontent.com/array-carpenter/nfl-draft-data/master/2025_post_combine/Ashton_Jeanty_post_combine.png" alt="NFL Draft Radar Charts">
       <div class="card-footer">
         <a href="https://github.com/array-carpenter/nfl-draft-data" target="_blank">NFL Draft Radar Charts</a>
       </div>
     </div>
     <div class="card">
-        <img src="https://raw.githubusercontent.com/array-carpenter/dnc-sphere/refs/heads/main/example_dnc_output.png" alt="Dead & Co. Sphere Run">
+      <img src="https://raw.githubusercontent.com/array-carpenter/dnc-sphere/main/example_dnc_output.png" alt="Dead & Co. Sphere Run">
       <div class="card-footer">
-        <a href="https://github.com/array-carpenter/dnc-sphere/tree/main" target="_blank">Dead & Co. Sphere Run</a>
+        <a href="https://github.com/array-carpenter/dnc-sphere" target="_blank">Dead & Co. Sphere Run</a>
       </div>
     </div>
   </div>
